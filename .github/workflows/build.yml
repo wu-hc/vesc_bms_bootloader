@@ -28,7 +28,7 @@ jobs:
 
     # 上传生成的 bin 文件，方便下载
     - name: Upload Bootloader bin
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bootloader-bin
         path: vesc_bms_bootloader/build/*.bin
