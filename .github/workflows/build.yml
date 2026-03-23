@@ -22,7 +22,6 @@ jobs:
     # 编译 bootloader
     - name: Build Bootloader
       run: |
-        cd vesc_bms_bootloader
         make clean
         make
 
@@ -31,4 +30,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: bootloader-bin
-        path: vesc_bms_bootloader/build/*.bin
+        path: build/*.bin
